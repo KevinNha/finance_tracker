@@ -1,0 +1,16 @@
+{
+    "user": "kevinnha95",
+    "month": "november",
+    "category": "food",
+    "category_breakdown": {
+        "groceries": {
+            "spent": 0.00,
+            "budegeted": 50.00
+        },
+        "restaurants": {
+            "spent": 465.99,
+            "budegeted": 1000.00
+        }
+    },
+    "category_totals": 1050.00
+}
