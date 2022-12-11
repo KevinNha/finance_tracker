@@ -26,7 +26,24 @@ Resources:
           Properties:
             Path: /hello
             Method: get
-
+  BalanceInformationTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      AttributeDefinitions:
+        - AttributeName: user_id
+          AttributeType: S
+        - AttributeName: month
+          AttributeType: S
+      KeySchema:
+        - AttributeName: user_id
+          KeyType: HASH
+        - AttributeName: month
+          KeyType: RANGE
+      BillingMode:
+        PAY_PER_REQUEST
+      TableName:
+        UserBalanceInformation
+      
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
   # Find out more about other implicit resources you can reference within SAM
