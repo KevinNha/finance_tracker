@@ -1,0 +1,10 @@
+version=0.1
+[default.global.parameters]
+stack_name = "finance-tracker"
+
+[default.deploy.parameters]
+s3_prefix = "finance-tracker"
+region = "us-east-1"
+resolve_s3 = true
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
